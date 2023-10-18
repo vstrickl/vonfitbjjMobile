@@ -1,0 +1,8 @@
+<div class="mx-auto flex-grow-1" style="padding-top: 20%;">
+    {% for h in header %}
+
+    <img src="{{ h.image.url }}" alt="{{ h.title }}" class="rounded-circle img-fluid mb-5" >
+    <p class="text-center fs-4 text-lg fw-semibold text-light">{{ h.title }}</p>
+    <p class="text-center text-lg text-light">{{ h.sub_title }}</p>
+    {% endfor %}
+</div>

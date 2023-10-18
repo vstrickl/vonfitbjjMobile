@@ -1,0 +1,7 @@
+<div class="flex-grow-1">
+    <div class="d-grid gap-2 col-md-4 mt-3 mb-4 mx-auto">
+        {% for m in menu %}
+        <a class="btn btn-light" href="{{ m.url }}" role="button">{{ m.title }}</a>
+        {% endfor %}
+    </div>
+</div>
