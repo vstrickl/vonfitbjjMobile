@@ -1,5 +1,5 @@
-<div class="d-grid gap-2 d-md-block mx-auto flex-grow-1">
+<div class="d-flex flex-wrap gap-2 justify-content-center align-items-center">
     {% for s in social %}
-    <a href="{{ s.url }}"><i class="{{ s.font_awesome }}" style="color: #ffffff;"></i></i></a>
+    <a href="{{ s.url }}" class="px-3 text-decoration-none"><i class="{{ s.font_awesome }} d-flex" style="color: #ffffff; font-size: 4rem;"></i></i></a>
     {% endfor %}
 </div>

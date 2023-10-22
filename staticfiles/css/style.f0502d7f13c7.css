@@ -1,0 +1,10 @@
+/* Custom CSS to create a gradient background */
+
+.custom-gradient-bg {
+    background: linear-gradient(to bottom, #2a55ad , #18191a); /* Define your gradient colors here */
+}
+
+/* Create half-circles on the left and right sides */
+.custom-rounded {
+    border-radius: 50%;
+}

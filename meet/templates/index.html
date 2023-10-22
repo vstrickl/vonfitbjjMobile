@@ -2,52 +2,40 @@
 <html lang="en">
 
 <head>
+    
     {% block header %} 
         {% include 'layout/header.html'%} 
     {% endblock %}
 
-    <style>
-        /* Custom CSS to create a gradient background */
-        .custom-gradient-bg {
-            background: linear-gradient(to bottom, #2a55ad , #18191a); /* Define your gradient colors here */
-        }
-
-        /* Custom CSS to adjust image size on mobile screens */
-        @media (max-width: 767px) {
-            .img-fluid {
-                max-width: 100%; /* Allow the image to grow to 100% width on smaller screens */
-                height: auto; /* Maintain aspect ratio */
-            }
-        }
-    </style>
-
 </head>
 
-<body class="vh-100 custom-gradient-bg">
+<body class="custom-gradient-bg">
 
-    <div class="d-flex flex-column  h-100">
+    <div class="d-flex flex-column h-100" style="padding: 20% 5% 10%;">
+        <div class="h-100">
 
-    {% block title %}
-        {% include 'layout/title.html'%}
-    {% endblock %}
+        {% block title %}
+            {% include 'layout/title.html'%}
+        {% endblock %}
 
-    {% block menu %}
-        {% include 'layout/menu.html'%}
-    {% endblock %}
+        {% block menu %}
+            {% include 'layout/menu.html'%}
+        {% endblock %}
 
-    {% block social %}
-        {% include 'layout/social-menu.html'%}
-    {% endblock %}
+        {% block social %}
+            {% include 'layout/social-menu.html'%}
+        {% endblock %}
 
-    {% block footer %}
-        {% include 'layout/footer.html'%}
-    {% endblock %}
+        {% block footer %}
+            {% include 'layout/footer.html'%}
+        {% endblock %}
 
-    <!-- Vendor JS -->
-    {% block venderJs %}
-        {% include 'layout/venderJs.html'%}
-    {% endblock %}
+        <!-- Vendor JS -->
+        {% block venderJs %}
+            {% include 'layout/venderJs.html'%}
+        {% endblock %}
 
+        </div>
     </div>
 
 </body>

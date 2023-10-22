@@ -1,7 +1,7 @@
-<div class="flex-grow-1">
-    <div class="d-grid gap-2 col-md-4 mt-3 mb-4 mx-auto">
-        {% for m in menu %}
-        <a class="btn btn-light" href="{{ m.url }}" role="button">{{ m.title }}</a>
-        {% endfor %}
+<div style="margin-top: 10%; margin-bottom: 8%;">
+    {% for m in menu %}
+    <div class="mb-4" style="width: 100%;"> 
+        <a class="btn btn-light custom-rounded d-flex align-items-center justify-content-center" style="width: 100%; height: 8rem; font-size: 2rem;" href="{{ m.url }}" role="button">{{ m.title }}</a>
     </div>
+    {% endfor %}
 </div>

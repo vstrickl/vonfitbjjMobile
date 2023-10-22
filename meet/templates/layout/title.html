@@ -1,8 +1,8 @@
-<div class="mx-auto flex-grow-1" style="padding-top: 20%;">
+<div class="d-flex flex-column align-items-center flex-grow-1">
     {% for h in header %}
 
-    <img src="{{ h.image.url }}" alt="{{ h.title }}" class="rounded-circle img-fluid mb-5" >
-    <p class="text-center fs-4 text-lg fw-semibold text-light">{{ h.title }}</p>
-    <p class="text-center text-lg text-light">{{ h.sub_title }}</p>
+    <img src="{{ h.image.url }}" alt="{{ h.title }}" width="30%" height="30%" class="rounded-circle img-fluid mb-5" >
+    <p class="h1 text-center text-light fw-semibold">{{ h.title }}</p>
+    <p class="h2 text-center text-light fw-light" style="margin-top: 1%;">{{ h.sub_title }}</p>
     {% endfor %}
 </div>
