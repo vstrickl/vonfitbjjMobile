@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'meet'
+    'meet',
+    'schedule',
 ]
 
 MIDDLEWARE = [
@@ -143,3 +144,13 @@ STATICFILES_STORAGE='whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+# CSRF Tokens
+
+CSRF_TRUSTED_ORIGINS = ['https://book.vonfitbjj.com','http://127.0.0.1:8000']
+
+# FullCalendar Secrets
+# https://fullcalendar.io/
+
+GOOGLE_API_KEY = config('GOOGLE_API_KEY')
+GOOGLE_CALENDAR_ID = config('GOOGLE_CALENDAR_ID')

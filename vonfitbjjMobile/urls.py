@@ -21,6 +21,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('', include('meet.urls')),
+    path('schedule/', include('schedule.urls')),
     path('admin/', admin.site.urls),
 ]
 

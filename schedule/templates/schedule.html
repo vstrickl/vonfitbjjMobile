@@ -1,0 +1,36 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    {% block header %} 
+        {% include 'layout/header.html'%} 
+    {% endblock %}
+
+</head>
+
+<body>
+
+    <div class="d-flex flex-column h-100" style="padding: 20% 5% 10%;">
+        <div class="h-100">
+
+            {% block body %}
+                {% include 'layout/calendar.html'%}
+            {% endblock %}
+
+            {% block footer %}
+                {% include 'layout/footer.html'%}
+            {% endblock %}
+
+            <!-- Vendor JS -->
+            {% block venderJs %}
+                {% include 'layout/venderJs.html'%}
+            {% endblock %}
+
+        </div>
+    </div>
+
+</body>
+</html>
