@@ -27,7 +27,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG')
 
-ALLOWED_HOSTS = ['127.0.0.1', '.vonfitbjj.com']
+ALLOWED_HOSTS = config('ALLOWED_HOSTS', default='').split(',')
 
 
 # Application definition
@@ -146,6 +146,7 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # CSRF Tokens
+# https://docs.djangoproject.com/en/4.2/howto/csrf/
 
 CSRF_TRUSTED_ORIGINS = ['https://book.vonfitbjj.com','http://127.0.0.1:8000']
 
