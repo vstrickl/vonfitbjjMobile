@@ -1,0 +1,7 @@
+.custom-gradient-bg {
+    background: linear-gradient(to bottom, #2a55ad , #18191a);
+}
+
+.custom-rounded {
+    border-radius: 70px;
+}
