@@ -11,25 +11,31 @@
 
 </head>
 
-<body>
+<body class="vh-100">
 
-    <div class="d-flex flex-column h-100" style="padding: 20% 5% 10%;">
-        <div class="h-100">
+    <div class="d-flex flex-column h-100">
 
-            {% block body %}
-                {% include 'layout/calendar.html'%}
-            {% endblock %}
+        {% block navbar %}
+            {% include 'layout/navbar.html'%}   
+        {% endblock %}
 
-            {% block footer %}
-                {% include 'layout/footer.html'%}
-            {% endblock %}
+        {% block buttons %}
+            {% include 'layout/buttons.html'%}
+        {% endblock %}
 
-            <!-- Vendor JS -->
-            {% block venderJs %}
-                {% include 'layout/venderJs.html'%}
-            {% endblock %}
+        {% block body %}
+            {% include 'layout/calendar.html'%}
+        {% endblock %}
 
-        </div>
+        {% block footer %}
+            {% include 'layout/footer.html'%}
+        {% endblock %}
+
+        <!-- Vendor JS -->
+        {% block venderJs %}
+            {% include 'layout/venderJs.html'%}
+        {% endblock %}
+
     </div>
 
 </body>

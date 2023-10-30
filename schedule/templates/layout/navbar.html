@@ -1,0 +1,12 @@
+<!-- Navbar -->
+<div class="d-flex flex-row justify-content-center align-items-center bg-dark px-5 py-1x">
+  <div class="col-1 me-5">
+    <a href="https://www.vonfitbjj.com/" class="text-decoration-none text-light fs-3 fw-semibold">Vonfitbjj_</a>
+  </div>
+  <div class="col-11">
+    <a class="fs-3 text-decoration-none" href="{% url 'meet' %}"><i class="fa-solid fa-arrow-left"></i></a>
+    {% for m in menu %}
+    <a class="nl ms-3 text-decoration-none text-center" href="{{ m.url }}">{{ m.title }}</a>
+    {% endfor %}
+  </div>
+</div>
