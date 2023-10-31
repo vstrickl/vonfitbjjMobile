@@ -10,6 +10,24 @@ i:hover, a:hover, .active {
     color: #ffffff;
 }
 
+.pt-1x {
+    padding-top: 10%;
+}
+
+.pt-3x {
+    padding-top: 30%; 
+}
+
+.px-1x {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.py-1x-full {
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
 .py-1x {
     padding-top: 3%;
     padding-bottom: 3%;
@@ -65,7 +83,7 @@ i:hover, a:hover, .active {
     width: 5rem;
     border-radius: 50%;
     position: fixed;
-    top: 93vh; 
+    top: 80vh; 
     right: 5vw; 
     z-index: 2000;
     box-shadow: 0 1rem 3rem black;
@@ -203,6 +221,10 @@ i:hover, a:hover, .active {
         display: none!important;
     }
 
+    .desktop-footer {
+        display: flex!important;
+    }
+
 }
 
 @media (max-width: 991.5px) {
@@ -212,6 +234,10 @@ i:hover, a:hover, .active {
     }
 
     #desktop-menu {
+        display: none!important;
+    }
+
+    .desktop-footer {
         display: none!important;
     }
     
