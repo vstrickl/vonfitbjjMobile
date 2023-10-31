@@ -11,12 +11,18 @@
 
 </head>
 
-<body class="vh-100">
-
-    <div class="d-flex flex-column h-100">
+<body>
 
         {% block navbar %}
             {% include 'layout/navbar.html'%}   
+        {% endblock %}
+
+    <!-- Body -->
+    
+    <div class="d-flex flex-column vh-100">
+
+        {% block mobile_nav %}
+            {% include 'layout/mobile-menu.html'%}
         {% endblock %}
 
         {% block buttons %}
@@ -27,16 +33,16 @@
             {% include 'layout/calendar.html'%}
         {% endblock %}
 
-        {% block footer %}
-            {% include 'layout/footer.html'%}
-        {% endblock %}
-
-        <!-- Vendor JS -->
-        {% block venderJs %}
-            {% include 'layout/venderJs.html'%}
-        {% endblock %}
-
     </div>
+
+    {% block footer %}
+        {% include 'layout/calendar-footer.html'%}
+    {% endblock %}
+
+    <!-- Vendor JS -->
+    {% block venderJs %}
+        {% include 'layout/venderJs.html'%}
+    {% endblock %}
 
 </body>
 </html>

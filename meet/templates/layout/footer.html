@@ -1,2 +1,6 @@
-<footer style="padding-bottom: 20%;">
-</footer>
+<!-- Footer -->
+<div class="d-flex flex-wrap gap-2 justify-content-center align-items-center desktop-footer">
+    {% for s in social %}
+    <a href="{{ s.url }}" class="px-3 text-decoration-none fs-4"><i class="{{ s.font_awesome }} d-flex" style="color: #ffffff; font-size: 4rem;"></i></i></a>
+    {% endfor %}
+</div>

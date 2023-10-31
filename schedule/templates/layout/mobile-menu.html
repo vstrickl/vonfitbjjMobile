@@ -1,0 +1,28 @@
+<!-- Mobile Navigation Menu (Collapsible) -->
+<div class="mobile-menu">
+  <!-- Hamburger Placeholder -->
+  <input type="checkbox" id="menu-toggle" class="checkbox menu-toggle" />
+  <label for="menu-toggle" class="button">
+    <span class="icon">&nbsp;</span>
+  </label>
+  <!-- Mobile Menu Items (hidden by default) -->
+  <div class="nav nav-bg d-flex flex-column pt-1x px-1x">
+    <!-- Brand/Logo -->
+    <div class="pt-1x">
+      <a href="https://www.vonfitbjj.com/" class="text-decoration-none text-light display-1 fw-semibold">Vonfitbjj_</a>
+    </div>
+    <!-- Nav Items -->
+    <div class="d-flex flex-column menu-items pt-3x">
+      <a class="fs-3 text-decoration-none ml" href="{% url 'meet' %}"><i class="fa-solid fa-arrow-left text-light"></i></a>
+      {% for m in menu %}
+      <a class="ml ms-3 text-decoration-none" href="{{ m.url }}">{{ m.title }}</a>
+      {% endfor %}
+    </div>
+    <!-- Social Menu-->
+    <div class="d-flex flex-wrap gap-2 justify-content-center align-items-center pt-3x">
+      {% for s in social %}
+      <a href="{{ s.url }}" class="text-decoration-none fs-3 ml"><i class="{{ s.font_awesome }} d-flex text-light"></i></a>
+      {% endfor %}
+    </div>
+  </div>
+</div>
