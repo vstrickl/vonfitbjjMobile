@@ -2,6 +2,14 @@ tr {
     height: 4rem;
 }
 
+a {
+    height: 8rem!important;
+}
+
+a {
+    font-size: 2rem!important;
+}
+
 a, i {
     color: #4d4d4d;
 }
