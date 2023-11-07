@@ -158,3 +158,8 @@ CSRF_TRUSTED_ORIGINS = ['https://book.vonfitbjj.com','http://127.0.0.1:8000']
 
 GOOGLE_API_KEY = config('GOOGLE_API_KEY')
 GOOGLE_CALENDAR_ID = config('GOOGLE_CALENDAR_ID')
+
+# Google Analytics
+
+MEASUREMENT_ID = config('MEASUREMENT_ID')
+GOOGLE_TAG_URL = config('GOOGLE_TAG_URL')
